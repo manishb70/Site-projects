@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+
+<style>
+
+	@import url(https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+        background-color: #edebe9;
+        font-family: "SoDo Sans SemiBold";
+        overflow-x: hidden;
+
+    }
+header{
+
+        display: flex;
+        /* border: 2px solid black; */
+        /* justify-content: center; */
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 73px;    
+        background-color: white;
+        box-shadow: #1c1c1c1c 1px 1px 2px;
+        width: 100vw;
+        overflow-y:hidden ;
+    }
+
+header  ul {
+
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-left: 0;
+}
+
+header  ul li {
+    
+    
+    padding: 0 35px;
+    /* height: 25px; */
+    /* border-bottom: 2px solid black; */
+}
+
+header  ul li a{
+    
+    color: #212529;
+        text-decoration: none;
+    }
+
+    @media screen and (max-width:900px){
+        
+        header{
+
+            height: 17vh;
+            
+        }
+
+    }
+
+    .search_box{
+        display: flex;
+        border: 1px solid black;
+        align-items: center;
+        width: 260px;
+        height: 34px;
+        border-radius: 1.25em;
+        justify-content: space-around;
+}
+
+    .search_box input{
+
+                width: 80%;
+                border: none;
+    }
+
+
+    header a:hover{
+        /* line-height: 10px; */
+    BORDER-BOTTOM: 2px solid;
+
+    }
+
+    .tag_line{
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        background-color: #1e3932;
+        /* border: 2px solid black; */
+        height: 80px;
+        color: white;
+        justify-content: space-around;
+        box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+       
+    }
+
+
+    .tag_line button{
+            background-color: #1e3932;
+            border-radius: 1.25rem;
+            color: white;
+            border-color: white;
+            /* padding: 10px; */
+            width: 96px;
+            height: 32px;
+            border:1px solid white;
+            font-size: -1px;
+        }
+
+
+        .tag_line p button{
+
+                /* margin: 0 50px; */
+                
+        }
+
+
+        hr{
+
+                height: 25px;
+                color:white;
+                background-color: white;
+             
+            }
+
+
+            .Barista{
+
+                    /* border:2px solid black; */
+                    /* height: 400px;                         */
+                    display: flex;
+                    flex-wrap: wrap;
+                    min-height: 400px;
+                    margin-bottom: 5%;
+                }
+
+                .title_site{
+                        
+                        margin:auto;
+                        width: 90%;
+                        /* border:2px solid black; */
+                        height:13vh;
+                }
+
+                .title_site ul{
+
+                    display: flex;
+                    justify-content: space-between;
+                    height:100%;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    
+                }
+                .title_site li{
+
+                    list-style: none;
+
+                }
+                .title_site ul a{
+
+                        text-decoration: none;
+                        color: black;
+
+                }
+
+                .sample_coffe{
+
+                        width: 349px;
+                        height: 160px;
+                        /* border:2px solid black; */
+                        background-color: white;
+                        align-items: center;
+                        display: flex;
+                        border-radius: 12px;
+                        box-shadow: #1c1c1c1c 0px 0px 9px 6px;
+                        margin-left: 6%;
+                        margin-top: 2%;
+                    }
+
+                .coffe_milkshake img{
+
+                        border-radius: 6px;
+
+
+                }
+                .coffe_milkshake{
+
+                    /* border: 2px solid black; */
+                    height: 80%;
+                    width: 89%;
+                    margin: auto;
+                    margin-top: 4%;
+
+                }
+
+
+                .coffe_detail{
+                        display: flex;
+                        height: 73%;
+                        width: 100%;
+                        /* border: 2px solid red; */
+                        flex-wrap: wrap;
+                          justify-content: space-between;
+                    }   
+
+
+                    .details_veg{
+
+                            height: 100%;
+                            /* border: 2px solid black; */
+                            width: 70%;
+                            margin-top: 2%;
+
+                    }
+                    .details_veg span{
+
+                        font-size: 0.50rem;
+                        font-family: Pike_Regular,Helvetica,sans-serif;
+                        font-weight: 500;
+                        /* color: red;; */
+                        }
+
+                        .add_to_cart{
+
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: end;
+                            width: 100%;
+                            height: 28%;
+                            /* border: 2px solid; */
+                        }
+                        .add_to_cart button{
+                            border-radius: 30px;
+                            background-color: #1e3932;
+                            border-style: none;
+                            padding: 7px 18px;
+                            color: white;
+                            border: none;
+                            outline: none;
+                        }
+
+                        .coffe_types{
+
+                            background-color: white;
+                            /* border: 2px solid black; */
+                            /* height: 200px; */
+                            box-shadow: #1c1c1c1c 1px -3px 17px 0px;
+
+                        }
+
+
+                        .coffe_types_items{
+
+                                height: 100%;
+                                width: 100%;
+
+                        }
+
+                        .coffe_types h2{
+
+                        }
+
+                        .coffe_items img{
+
+                                height: 102px;
+                                border-radius: 100%;
+
+                        }
+                        .coffe_types_items{
+
+                                /* border:2px solid red; */
+                                display: flex;
+                                flex-wrap: wrap;
+                                margin: auto;
+                                margin-top: 1%;
+                                width: 89%;
+                                height: 94%;
+                            }
+                                                
+                        .coffe_items{
+                            /* border:2px solid green; */
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 84%;
+                            justify-content: space-between;
+                            height: 70%;
+                            margin: auto;
+                        }
+                        .coffe_types_items h2{
+                            width: 100%;
+                            margin-bottom: 30px;
+                            margin-top:30px;
+                        }
+
+
+                        .item_text_set{
+                            display: flex;
+                            flex-wrap: wrap;
+                            /* border: 1px solid; */
+                            width: 110px;
+                            text-align: center;
+                            
+                        }
+                        .item_text_set a{
+                            text-decoration: none;
+                            color: black;
+                        }
+
+                        .offer_drinks{
+
+
+                                /* border: 2px solid black; */
+                                background-color: white;
+                            }
+
+                            .offering_details_box{
+
+                                    /* border: 2px solid black; */
+                                    margin: 10px;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                }
+                            
+                            .offering_drinks_card{
+
+                                    /* border: 2px solid black; */
+                                    margin: 10px;
+                                    width: 100%;   
+                                    display: flex;
+                                    justify-content: space-around;
+                                    flex-wrap: wrap; 
+                            }   
+                            .offer_coffe_card{
+
+                                /* border: 2px solid black; */
+                                height: 21rem;
+                                width: 22rem;
+                                margin: 10px;
+                                background-color: #f9f9f9;
+                                border-radius:8px;
+                                overflow: hidden;
+                                box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+                            }
+                            
+                            .offering_details_box h1{
+
+                                    /* border: 2px solid red; */
+                                    margin: 10px;
+                                    width: 100%;
+                            }
+                            
+                            .offer_coffe_card img{
+
+                                    /* width: 100%; */
+                            }
+                            .card_text_body{
+
+                                width: 95%;
+                                /* border: 2px solid red; */
+                                height:66%;
+                                margin-top: 1%;
+                                margin:auto;
+                            }
+
+
+                            .veg_100{
+                                width: 100%;
+                            
+                            }
+                            .veg_100 h5{
+
+
+                                font-size: 16px;
+                                width: 100%;
+                                border:2px solid black;
+
+                            }
+
+                            .card_text_body span{
+
+                                font-size: 0.50rem;
+                                font-family: Pike_Regular,Helvetica,sans-serif;
+                                font-weight: 500;
+                             
+                            }
+
+                            .drinks_bio{
+
+                                width: 100%;
+
+                            }
+
+                            .card_text_body p{
+
+                                font-size: 0.50rem;
+                                font-family: Pike_Regular,Helvetica,sans-serif;
+                                font-weight: 500;
+                                margin-top: 8%;
+                                font-size: 9px;
+                            }
+
+                            
+
+</style>
+
+<body>
+
+    <header>
+        <img src="logo.png" alt="" height="40px">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Gift</a></li>
+            <li><a href="">Order</a></li>
+            <li><a href="">Pay</a></li>
+            <li><a href="">Store</a></li>
+        </ul>
+
+
+        <div class="search_box"><img src="search.svg" alt="" style="margin: 0 -1px -1px 10px;"><input type="text"
+                placeholder="Looking for something specific?"></div>
+        <img src="account.svg" alt="" srcset="">
+    </header>
+
+    <main>
+
+        <div class="tag_line">
+
+            <p>Blossoms of Spring: Nature's Awakening Symphony</p>
+
+            <button>Known More</button>
+        </div>
+        <hr>
+
+        <section class="Barista">
+            <div class="title_site">
+                <ul>
+                    <li style="font-size: 25px;">Barista Recommends</li>
+                    <li><a href="">View Menu</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="sample_coffe">
+
+                <div class="coffe_milkshake">
+
+                    <div class="coffe_detail">
+                        <img src="strawberrymilkashake.webp" alt="" height="80px">
+                        <div class="details_veg">
+                            <img src="veg.svg" alt="" style="border-radius: 0;">
+                            <h3>Strawberry Milkshake</h3>
+                            <span>TALL(Tall Strawberry Milkshake) .PER SERVE (354ml) - 569 Kcal</span>
+                        </div>
+                    </div>
+                    <div class="add_to_cart">
+                        <h4>₹ 367 .50</h4>
+                        <button>Add Item</button>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!-- This is second coffe box -->
+
+            <div class="sample_coffe">
+
+                <div class="coffe_milkshake">
+
+                    <div class="coffe_detail">
+                        <img src="strawberrymilkashake.webp" alt="" height="80px">
+                        <div class="details_veg">
+                            <img src="veg.svg" alt="" style="border-radius: 0;">
+                            <h3>Vanilla Milkshake</h3>
+                            <span> TALL(354 ML) PER SERVE (354ml) - 531 Kcal </span>
+                        </div>
+                    </div>
+                    <div class="add_to_cart">
+                        <h4>₹ 367 .50</h4>
+                        <button>Add Item</button>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <section class="coffe_types">
+
+            <div class="coffe_types_items">
+                <h2>Handcrafted Curations </h2>
+                <div class="coffe_items">
+                    <div class="item_text_set"><a href="#"><img src="Bestseller.jpg" alt="">Bestseller</a></div>
+                    <div class="item_text_set"><a href="#"><img src="Drinks.jpg" alt="">Drinks</a></div>
+                    <div class="item_text_set"><a href="#"><img src="Food.jpg" alt="">Food</a></div>
+                    <div class="item_text_set"><a href="#"><img src="Merchandise.jpg" alt="">Merchandise</a>
+                    </div>
+                    <div class="item_text_set"><a href="#"><img src="CoffeeAtHome.jpg" alt="">Coffee At Home</a>
+                    </div>
+                    <div class="item_text_set"><a href="#"><img src="ReadyToEat.jpg" alt="">Ready To Eat</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="offer_drinks">
+
+            <div class="offering_details_box">
+                <h1>Latest Offerings </h1>
+                <div class="offering_drinks_card">
+
+                    <!-- 1st card of drinks -->
+                    <div class="offer_coffe_card">
+                        <img src="Strawberry Acai Lemonade.webp" alt="" style="width: 100%;">
+
+                        <div class="card_text_body">
+
+                            <div class="veg_100">
+                                <img src="veg.svg" alt="" width="16px" height="">
+                            </div>
+
+                            <div class="drinks_bio">
+                                <h5>Strawberry Acai Lemonade </h5>
+                                <span> TALL(354 ML) . 88 kcal </span>
+                            </div>
+                            <p>Sweet strawberry flavours accented by acai notes, shaken with ice and strawberry pieces -
+                                a welcoming sweet sp </p>
+                            <div class="add_to_cart">
+                                <h4>₹ 378.00</h4>
+                                <button>Add Item</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second coffe card -->
+                    <div class="offer_coffe_card">
+                        <img src="Strawberry Acai Lemonade.webp" alt="" style="width: 100%;">
+
+                        <div class="card_text_body">
+
+                            <div class="veg_100">
+                                <img src="veg.svg" alt="" width="16px" height="">
+                            </div>
+
+                            <div class="drinks_bio">
+                                <h5>Strawberry Acai Lemonade </h5>
+                                <span> TALL(354 ML) . 88 kcal </span>
+                            </div>
+                            <p>Sweet strawberry flavours accented by acai notes, shaken with ice and strawberry pieces -
+                                a welcoming sweet sp </p>
+                            <div class="add_to_cart">
+                                <h4>₹ 378.00</h4>
+                                <button>Add Item</button>
+                            </div>
+                        </div>
+
+
+
+                        <!-- third coffe card -->
+                    </div><div class="offer_coffe_card">
+                        <img src="Strawberry Acai Lemonade.webp" alt="" style="width: 100%;">
+
+                        <div class="card_text_body">
+
+                            <div class="veg_100">
+                                <img src="veg.svg" alt="" width="16px" height="">
+                            </div>
+
+                            <div class="drinks_bio">
+                                <h5>Strawberry Acai Lemonade </h5>
+                                <span> TALL(354 ML) . 88 kcal </span>
+                            </div>
+                            <p>Sweet strawberry flavours accented by acai notes, shaken with ice and strawberry pieces -
+                                a welcoming sweet sp </p>
+                            <div class="add_to_cart">
+                                <h4>₹ 378.00</h4>
+                                <button>Add Item</button>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+</body>
+
+</html>
