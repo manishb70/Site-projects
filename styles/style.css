@@ -1,1 +1,486 @@
-/* Hello world */
+@import url(https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+        background-color: #edebe9;
+        font-family: "SoDo Sans SemiBold";
+        overflow-x: hidden;
+
+    }
+header{
+
+        display: flex;
+        /* border: 2px solid black; */
+        /* justify-content: center; */
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 73px;    
+        background-color: white;
+        box-shadow: #1c1c1c1c 1px 1px 2px;
+        width: 100vw;
+        overflow-y:hidden ;
+    }
+
+header  ul {
+
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-left: 0;
+}
+
+header  ul li {
+    
+    
+    padding: 0 35px;
+    /* height: 25px; */
+    /* border-bottom: 2px solid black; */
+}
+
+header  ul li a{
+    
+    color: #212529;
+        text-decoration: none;
+    }
+
+    @media screen and (max-width:900px){
+        
+        header{
+
+            height: 17vh;
+            
+        }
+
+    }
+
+    .search_box{
+        display: flex;
+        border: 1px solid black;
+        align-items: center;
+        width: 260px;
+        height: 34px;
+        border-radius: 1.25em;
+        justify-content: space-around;
+}
+
+    .search_box input{
+
+                width: 80%;
+                border: none;
+    }
+
+
+    header a:hover{
+        /* line-height: 10px; */
+    BORDER-BOTTOM: 2px solid;
+
+    }
+
+    .tag_line{
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        background-color: #1e3932;
+        /* border: 2px solid black; */
+        height: 80px;
+        color: white;
+        justify-content: space-around;
+        box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+       
+    }
+
+
+    .tag_line button{
+            background-color: #1e3932;
+            border-radius: 1.25rem;
+            color: white;
+            border-color: white;
+            /* padding: 10px; */
+            width: 96px;
+            height: 32px;
+            border:1px solid white;
+            font-size: -1px;
+        }
+
+
+        .tag_line p button{
+
+                /* margin: 0 50px; */
+                
+        }
+
+
+        hr{
+
+                height: 25px;
+                color:white;
+                background-color: white;
+             
+            }
+
+
+            .Barista{
+
+                    /* border:2px solid black; */
+                    /* height: 400px;                         */
+                    display: flex;
+                    flex-wrap: wrap;
+                    min-height: 400px;
+                    margin-bottom: 5%;
+                }
+
+                .title_site{
+                        
+                        margin:auto;
+                        width: 90%;
+                        /* border:2px solid black; */
+                        height:13vh;
+                }
+
+                .title_site ul{
+
+                    display: flex;
+                    justify-content: space-between;
+                    height:100%;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    
+                }
+                .title_site li{
+
+                    list-style: none;
+
+                }
+                .title_site ul a{
+
+                        text-decoration: none;
+                        color: black;
+
+                }
+
+                .sample_coffe{
+
+                        width: 349px;
+                        height: 160px;
+                        /* border:2px solid black; */
+                        background-color: white;
+                        align-items: center;
+                        display: flex;
+                        border-radius: 12px;
+                        box-shadow: #1c1c1c1c 0px 0px 9px 6px;
+                        margin-left: 6%;
+                        margin-top: 2%;
+                    }
+
+                .coffe_milkshake img{
+
+                        border-radius: 6px;
+
+
+                }
+                .coffe_milkshake{
+
+                    /* border: 2px solid black; */
+                    height: 80%;
+                    width: 89%;
+                    margin: auto;
+                    margin-top: 4%;
+
+                }
+
+
+                .coffe_detail{
+                        display: flex;
+                        height: 73%;
+                        width: 100%;
+                        /* border: 2px solid red; */
+                        flex-wrap: wrap;
+                          justify-content: space-between;
+                    }   
+
+
+                    .details_veg{
+
+                            height: 100%;
+                            /* border: 2px solid black; */
+                            width: 70%;
+                            margin-top: 2%;
+
+                    }
+                    .details_veg span{
+
+                        font-size: 0.50rem;
+                        font-family: Pike_Regular,Helvetica,sans-serif;
+                        font-weight: 500;
+                        /* color: red;; */
+                        }
+
+                        .add_to_cart{
+
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: end;
+                            width: 100%;
+                            height: 28%;
+                            /* border: 2px solid; */
+                        }
+                        .add_to_cart button{
+                            border-radius: 30px;
+                            background-color: #1e3932;
+                            border-style: none;
+                            padding: 7px 18px;
+                            color: white;
+                            border: none;
+                            outline: none;
+                        }
+
+                        .coffe_types{
+
+                            background-color: white;
+                            /* border: 2px solid black; */
+                            /* height: 200px; */
+                            box-shadow: #1c1c1c1c 1px -3px 17px 0px;
+
+                        }
+
+
+                        .coffe_types_items{
+
+                                height: 100%;
+                                width: 100%;
+
+                        }
+
+                        .coffe_types h2{
+
+                        }
+
+                        .coffe_items img{
+
+                                height: 102px;
+                                border-radius: 100%;
+
+                        }
+                        .coffe_types_items{
+
+                                /* border:2px solid red; */
+                                display: flex;
+                                flex-wrap: wrap;
+                                margin: auto;
+                                margin-top: 1%;
+                                width: 89%;
+                                height: 94%;
+                            }
+                                                
+                        .coffe_items{
+                            /* border:2px solid green; */
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 84%;
+                            justify-content: space-between;
+                            height: 70%;
+                            margin: auto;
+                        }
+                        .coffe_types_items h2{
+                            width: 100%;
+                            margin-bottom: 30px;
+                            margin-top:30px;
+                            padding: 3%;
+                        }
+
+
+                        .item_text_set{
+                            display: flex;
+                            flex-wrap: wrap;
+                            /* border: 1px solid; */
+                            width: 110px;
+                            text-align: center;
+                            
+                        }
+                        .item_text_set a{
+                            text-decoration: none;
+                            color: black;
+                        }
+
+                        .offer_drinks{
+
+
+                                /* border: 2px solid black; */
+                                background-color: white;
+                            }
+
+                            .offering_details_box{
+
+                                    /* border: 2px solid black; */
+                                    margin: 10px;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                }
+                            
+                            .offering_drinks_card{
+
+                                    /* border: 2px solid black; */
+                                    margin: 10px;
+                                    width: 100%;   
+                                    display: flex;
+                                    justify-content: space-around;
+                                    flex-wrap: wrap; 
+                            }   
+                            .offer_coffe_card{
+
+                                /* border: 2px solid black; */
+                                height: 21rem;
+                                width: 22rem;
+                                margin: 10px;
+                                background-color: #f9f9f9;
+                                border-radius:8px;
+                                overflow: hidden;
+                                box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+                            }
+                            
+                            .offering_details_box h1{
+
+                                    /* border: 2px solid red; */
+                                    margin: 10px;
+                                    width: 100%;
+                            }
+                            
+                            .offer_coffe_card img{
+
+                                    /* width: 100%; */
+                            }
+                            .card_text_body{
+
+                                width: 95%;
+                                /* border: 2px solid red; */
+                                height:66%;
+                                margin-top: 1%;
+                                margin:auto;
+                            }
+
+
+                            .veg_100{
+                                width: 100%;
+                            
+                            }
+                            .veg_100 h5{
+
+
+                                font-size: 16px;
+                                width: 100%;
+                                border:2px solid black;
+
+                            }
+
+                            .card_text_body span{
+
+                                font-size: 0.50rem;
+                                font-family: Pike_Regular,Helvetica,sans-serif;
+                                font-weight: 500;
+                             
+                            }
+
+                            .drinks_bio{
+
+                                width: 100%;
+
+                            }
+
+                            .card_text_body p{
+
+                                font-size: 0.50rem;
+                                font-family: Pike_Regular,Helvetica,sans-serif;
+                                font-weight: 500;
+                                margin-top: 8%;
+                                font-size: 9px;
+                            }
+
+                            
+                            footer{
+
+
+                                background-color: #0e382c;
+                                color: white;
+                            }
+                            .footer-content{
+                                
+                                display: flex;
+                                justify-content: space-around;
+                                /* border: 2px solid black; */
+                            }
+                            
+                            @media screen and (max-width:600px) {
+                                
+                                        .footer-content{
+
+                                                flex-direction: column;
+                                                margin: auto;
+
+
+                                        }
+
+                                        .border-he-wd{
+
+                                            width: 100%;
+                                        }            
+                            }
+                            .footer-content li{
+                                
+                                list-style: none;
+                                margin: 14px 0px 0px 0px;    
+                                font-size: small;
+                                font-family: sans-serif;
+
+                            }
+
+                                .flex-item{
+
+                                    display: flex;
+
+                                    justify-content: space-around;
+                                }
+
+                                    
+                                .footer-content h3{
+
+                                        margin-top: 10px;
+                                        width: 100%;
+                                        /* border: 2px solid black; */
+                                        /* text-align: center; */
+                                        height: 74px;
+                                        margin-left: 17%;
+                                    }
+                                
+
+                        .border-he-wd{
+
+                                /* border:2px solid black; */
+                                margin: 9% 0px 0px 0%;                                
+                        }                                 
+
+                        .border-he-wd{
+
+                            /* border: 2px solid black; */
+                            margin: 9% 0px 0px 0%;
+                            display: flex;
+                            /* justify-content: center; */
+                            /* flex-wrap: wrap; */
+                            justify-content: center;
+                            flex-wrap: wrap; 
+                            align-content: flex-start;
+                            width: 14rem;
+                        }   
+
+                        footer ul{
+
+                            /* border: 2px solid black; */
+                            width: 80%;
+                        }
+
+                        
